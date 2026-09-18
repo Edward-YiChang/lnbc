@@ -48,7 +48,7 @@ samples per replication.
 Submit the full study on SLURM with:
 
 ```bash
-bash run_all.sh --final --reps 1000 --account def-pengfei8
+bash run_all.sh --final --reps 1000 --account XXX
 ```
 
 Run the same workflow directly on a machine with enough resources with:
@@ -131,7 +131,7 @@ and no Gamma GOF runner.
 Submit the 1,000 lognormal outer replications with:
 
 ```bash
-sbatch --array=1-1000 --account=def-pengfei8 --cpus-per-task=10 \
+sbatch --array=1-1000 --account=XXX --cpus-per-task=10 \
   --mem=8G --time=1-12:00:00 gof/run_gof.slurm lognormal
 ```
 
